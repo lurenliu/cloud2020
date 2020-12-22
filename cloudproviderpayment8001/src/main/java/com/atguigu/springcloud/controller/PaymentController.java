@@ -83,4 +83,9 @@ public class PaymentController {
         return "一秒睡眠";
     }
 
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin(){
+        return "hi ， I am is PaymentZipkin 8001 中的一个方法";
+    }
+
 }

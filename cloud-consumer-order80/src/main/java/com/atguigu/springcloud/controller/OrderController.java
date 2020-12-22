@@ -59,4 +59,9 @@ public class OrderController {
         return restTemplate.getForObject(uri + "/lb/payment", String.class);
     }
 
+    @GetMapping("/consumer/payment/zipkin")
+    public String zipkim(){
+        return restTemplate.getForObject("http://localhost:8001" + "/payment/zipkin", String.class);
+    }
+
 }
